@@ -1,0 +1,19 @@
+Day,Theory Topic (5:00 PM),Coding Task (10:00 PM),Done?
+1,"Intro to JS, let/const, data types",Experiment with variables/types in browser console,[ ]
+2,"Functions, Arrow Functions, Scope","Create 5 simple utility functions (e.g., calc area)",[ ]
+3,"Arrays: map, filter, reduce",Use array methods to process a list of numbers/names,[ ]
+4,"Objects, Destructuring, Spread Operator",Create and manipulate user/product objects,[ ]
+5,DOM Manipulation (Basics),Change text and color of an HTML element with JS,[ ]
+6,Events & Event Listeners,Build a simple Digital Clock,[ ]
+7,Weekend Project: Finish simple Calculator app,Revision & Code Cleanup,[ ]
+
+
+
+Day,Theory Topic (5:00 PM),Coding Task (10:00 PM),Done?
+1,"Intro to JS, let/const, data types",Experiment with variables/types in browser console,[ ]
+2,"Functions, Arrow Functions, Scope","Create 5 simple utility functions (e.g., calc area)",[ ]
+3,"Arrays: map, filter, reduce",Use array methods to process a list of numbers/names,[ ]
+4,"Objects, Destructuring, Spread Operator",Create and manipulate user/product objects,[ ]
+5,DOM Manipulation (Basics),Change text and color of an HTML element with JS,[ ]
+6,Events & Event Listeners,Build a simple Digital Clock,[ ]
+7,Weekend Project: Finish simple Calculator app,Revision & Code Cleanup,[ ]
