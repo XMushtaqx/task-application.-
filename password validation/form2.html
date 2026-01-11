@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input_group{
+            margin-bottom: 15px;
+        }
+        .error{
+            color: red;
+            font-size: 12px;
+            height: 9px;
+        }
+        input:focus { border-color: #3498db; }
+        input.error { border-color: #e74c3c; }
+    </style>
+
+</head>
+<body>
+    <h1>login/signup page</h1>
+    <div class="submitform">
+        <form id="submit-form">
+            <div class="input_group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" >
+                <div class="error" id="email-error"></div>
+            </div>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <div class="error" id = "passwordError"></div>
+            <button type="submit" id="button">submit</button>
+
+
+        </form>
+    </div>
+</body>
+<script>
+    const emailInput = document.getElementById('email')
+    const emailError = document.getElementById('email-error')
+    const passwordInput = document.getElementById('password')
+    const passwordError = document.getElementById('passwordError')
+
+    emailInput.addEventListener('input',function(){
+        if(!this.value.includes('@')){
+            this.classList.add('error');
+            emailError.textContent = 'put valid email address'
+        }
+        else {
+            this.classList.remove('error');
+            emailError.textContent = ''
+        }
+    });
+
+    passwordInput.addEventListener('input', function(){
+
+        const password = this.value;
+
+        const regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{6,}$/;
+        if(!regex.test(password)){
+            this.classList.add('error');
+            passwordError.textContent = 'Password must include: 1 capital letter, 1 lowercase, 1 number, 1 special char, and min 6 characters.';
+
+        }
+        else {
+            this.classList.remove('error')
+            passwordError.textContent = ''
+
+        }
+    });
+    document.getElementById('submit-form').addEventListener('submit' ,function(e){
+        e.preventDefault();
+        const email = emailInput.value.trim();
+        const password = passwordInput.value.trim();
+        
+        const emailValid = email.includes('@');
+        const passwordValid = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{6,}$/.test(password);
+
+
+        if(!emailValid || !passwordValid){
+            alert("please Enter correct Credentails to submit your form ");
+        }
+        else {
+            alert("form is submitted sucessfully");
+        }
+    });
+</script>
+</html>

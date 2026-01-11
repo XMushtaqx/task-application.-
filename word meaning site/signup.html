@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h screen flex item-center justify-center bg-gray-600">
+    <div class="bg-white rounded-md  p-8 shadow-md w-96">
+        <h2 class="text-2xl font-bold mb-6 text-center">Create a Account</h2>
+
+        <input 
+        id="inputEmail"
+        placeholder="example@gmail.com"
+        class="w-full mb-4 px-4 py-2 border rounded"
+        type="email">
+        <input type="password"  
+        placeholder="Password"
+        class="w-full mb-4 px-4 py-2 border rounded"
+        id="password">
+
+        <input 
+        id="confirmPassword"
+        placeholder="Confirm Password"
+        class="w-full mb-4 px-4 py-2 border rounded"
+        type="password">
+
+        <button 
+        id="signupBtn"
+        type="button"
+        class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+        >Sign-up</button>
+
+        <p
+        class="text-sm text-center mt-4"
+        >Already have an Account?
+    
+        <a href="index.html" class="text-blue-600">Login</a>
+    </p>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
