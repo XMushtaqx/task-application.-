@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-6  border rounded-md w-full max-w-sm shadow-md">
+    <h2 class="text-2xl font-bold text-center mb-4">Login</h2>
+    <form id="loginForm" class="space-y-4">
+    <div class="mb-4">
+    
+    <label for="emailInput" class="sr-only">Email</label>
+    <input
+    placeholder="Example@email.com"
+    class="w-full p-2 border rounded"
+    id="emailInput"
+    type="email">
+    <p id="wrongEmail" class="text-red-500 hidden text-sm">Email is not valid</p>
+
+    </div>
+    <div class="mb-4">
+   
+        <label for="password" class="sr-only">Password</label>
+        <input 
+    placeholder="******"
+    class="w-full p-2 border rounded"
+    id="password"
+    maxlength="8"
+    type="password">
+    <p id="wrongPassword" class="text-red-500 text-sm hidden">Password is wrong</p>
+    </div>
+    <button 
+    id="loginBtn" class="w-full p-2 border rounded bg-blue-600 hover:bg-blue-700 text-white">Login</button>
+    <p id="wrongDetails" class="hidden text-red-500 text-sm">Please fill above details proporly</p>
+<br><br>
+    <button 
+class="w-full p-2 border rounded bg-blue-600 hover:bg-blue-700 text-white"
+
+>
+<a href="register.html">Register</a></button>
+
+</form>
+</div>
+
+<script type="module" src="/js/pages/login.js"></script>
+</body>
+</html>
