@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="min-h-screen bg-gray-100">
+    <nav class="flex justify-between text-white p-5 bg-green-400">
+        <h1 class="font-bold">TASKS</h1>
+        <div>
+            <a href="dashboard.html" id="navHome" class="mr-4">Home</a>
+            <a href="task.html" id="navTask" class="mr-4">Tasks</a>
+            <a href="contact.html" id="navContact">Contacts</a>
+        </div>
+    </nav>
+    <div class="mb-4">
+        <label for="taskTitle" class="sr-only">Task Title</label>
+        <input type="text" 
+        placeholder="Task Title"
+        class="w-full p-2 border rounded shadow"
+        id="taskTitle" >
+        <p class="text-red-500 hidden" id="wrongTaskTitle">Title cannot be empty</p>
+    </div>
+    <div class="mb-4">
+        <label id="taskDescription" class="sr-only">Task Description</label>
+        <textarea 
+         type="text" 
+        placeholder=" write your task Description"
+        id="taskDescription"
+        class="w-full p-2 border rounded shadow"
+        rows="5"
+        ></textarea>
+    </div>
+    <div class="mb-4">
+        <label id="taskStatus" class="sr-only">Task Status</label>
+        <select  id="taskStatus" class="w-full p-2 border rounded shadow">
+            <option value="todo">To Do</option>
+            <option value="in-progress">In Progress</option>
+            <option value="done">Done</option>
+        </select>
+    </div>
+    <div class="flex justify-between">
+        <button
+        type="button"
+        id="saveTaskBtn"
+        class="px-4 py-2 bg-green-400 hover:bg-green-500 text-white rounded border shadow"
+        >Save</button>
+        <button type="button"
+        id="deleteTaskbtn"
+        class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white border shadow rounded"
+
+        >
+            Delete
+        </button>
+        <p id="taskError" class="text-red-500 text-sm hidden">Something went wrong</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="bg-white p-8 rounded-md border shadow-md max-w-sm">
+        <h2 class="text-2xl font-bold mb-4 text-center">Register</h2>
+        <form id="registerForm" class="space-y-4">
+            <label for="emailInput" class="sr-only">Email</label>
+            <div class="mb-4">
+            <input 
+            id="emailInput"
+            placeholder="Example@email.com"
+            class="w-full p-2 border rounded shadow"
+            type="email">
+            <p id="wrongEmail" class="hidden text-red-500 text-sm">Email is not correct</p>
+</div>
+<div class="mb-4">
+            <label for="password" class="sr-only">Password</label>
+            <input type="password"
+            id="password"
+            placeholder="*******"
+            maxlength="17"
+            class="w-full p-2 border rounded shadow"
+            >
+            </div>
+            <div class="mb-4">
+            <label for="confirmPassword" class="sr-only">Confirm Password</label>
+            <input 
+            id="confirmPassword"
+            placeholder="*******"
+            maxlength="17"
+            class="w-full p-2 border rounded shadow"
+            type="password">
+<p id="wrongPassword" class="hidden text-red-500 text-sm">Password is not matched</p>
+</div>
+<button 
+id="registerBtn"
+class="w-full p-2 border rounded text-white bg-blue-600 hover:bg-blue-700"
+>Register</button>
+<p class="text-sm text-center">Already have an account ? <a href="login.html" class="text-blue-600">Login</a></p>
+        </form>
+
+    </div>
+    
+</body>
+</html>
